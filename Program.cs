@@ -64,3 +64,16 @@ ApplyDiscount(pricesQ6);
 Console.WriteLine(pricesQ6[0]);
 
 #endregion
+#region Question 7
+// Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. Call it and print pages afterward. How is the result different from question 5?
+
+void AddBonusPagesByRef(ref int pages)
+{
+    pages += 50;
+}
+
+AddBonusPagesByRef(ref pages);
+
+Console.WriteLine(pages);
+
+#endregion
