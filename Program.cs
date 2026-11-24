@@ -25,3 +25,14 @@ void PrintWelcomeMessage()
 PrintWelcomeMessage();
 
 #endregion
+#region Question 4
+// Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with "Clean Code".
+
+void PrintBookTitle(string title)
+{
+    Console.WriteLine("Book title: " + title);
+}
+
+PrintBookTitle("Clean Code");
+
+#endregion
