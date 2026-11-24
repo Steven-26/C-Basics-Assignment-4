@@ -90,3 +90,24 @@ ReplaceArray(ref pricesQ6);
 Console.WriteLine(pricesQ6.Length);
 
 #endregion
+#region Question 9
+// Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0. Call it and print the price if found.
+
+bool TryGetPrice(string title, out double price)
+{
+    if (title == "Clean Code")
+    {
+        price = 25.5;
+        return true;
+    }
+
+    price = 0;
+    return false;
+}
+
+if (TryGetPrice("Clean Code", out double price))
+{
+    Console.WriteLine(price);
+}
+
+#endregion
